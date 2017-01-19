@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;MinimumScalarProduct.mergesort(...)&apos; to &apos;mergeSort&apos;&#x0D;&#x0A;- Original project: &apos;APACQuestions&apos;&#x0D;&#x0A;- Original element: &apos;MinimumScalarProduct.mergesort(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;MinimumScalarProduct.mergeSort(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;mergesort&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{MinimumScalarProduct.java[MinimumScalarProduct~mergesort~\[I" name="mergeSort" references="true" stamp="1468059033387" version="1.0"/>
+</session>

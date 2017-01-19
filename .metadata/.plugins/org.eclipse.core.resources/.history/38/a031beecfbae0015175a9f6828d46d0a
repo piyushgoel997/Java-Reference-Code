@@ -1,0 +1,173 @@
+import java.util.Scanner;
+
+public class LinkedList {
+
+	public static node<Integer> takeinput(){
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter data");
+		int data = s.nextInt();
+		node<Integer> head = null;
+		node<Integer> tail = null;
+		while(data != -1){
+			node<Integer> newNode = new node<>(data);
+			if(head == null){
+				head = newNode;
+				tail = head;
+			}else{
+				tail.next = newNode;
+				tail = newNode;
+			}	
+			data = s.nextInt();
+		}
+		return head;
+	}
+
+	public static int lengthLL(node<Integer> head){
+		int count = 0;
+		while(head != null){
+			count++;
+			head = head.next;
+		}
+		return count;
+	}
+
+	public static void printLL(node<Integer> head){
+		while(head != null){
+			System.out.print(head.data+"->");
+			head = head.next;
+		}
+		System.out.println();
+	}
+
+	public static void printElement(node<Integer> head,int i){
+		int count = 0;
+		while(count < i){
+			count++;
+			head = head.next;
+		}
+		System.out.println(head.data);
+	}
+
+	public static node<Integer> insertElement(node<Integer> head, int i, int data){
+		if(i == 0){
+			node<Integer> newHead = new node<Integer>(data);
+			newHead.next = head;
+			return newHead;
+		}else{
+			int count = 0;
+			node<Integer> temp = new node<>(data);
+			node<Integer> newHead;
+			newHead = head;
+			while(count < i -1){
+				count++;
+				head = head.next;
+			}
+			temp.next = head.next;
+			head.next = temp;
+			return newHead;
+		}
+	}
+
+	public static node<Integer> delElement(node<Integer> head, int i){
+		if(i == 0){			
+			return head.next;			
+		}else{
+			int count = 0;
+			node<Integer> newHead = head;
+			while(count < i -1){
+				count++;
+				head = head.next;
+			}
+			node<Integer> temp = head.next;
+			head.next = temp.next;
+			return newHead;
+		}
+	}
+
+	public static int lenLLRec(node<Integer> head){
+		if(head == null){
+			return 0;
+		}		
+		return 1 + lenLLRec(head.next);
+	}
+	
+	public static node<Integer> delRec(node<Integer> head, int i){
+		if(i == 0){
+			return head.next;
+		}
+		node<Integer> temp = delRec(head.next, i-1);;
+		head.next = temp;
+		return head;
+	}
+	
+	public static node<Integer> insRec(node<Integer> head, int i, int data){
+		if(i == 0){
+			node<Integer> newNode = new node<>(data);
+			newNode.next = head;
+			head = newNode;
+			return head;
+		}
+		node<Integer> temp = insRec(head.next, i-1, data);;
+		head.next = temp;
+		return head;
+	}
+	
+	public static int findElement(node<Integer> head, int element){
+		if(head.data == element){
+			return 0;
+		}
+		return 1 + findElement(head.next, element);
+	}
+	
+	public static node<Integer> mergeLL(node<Integer> a, node<Integer> b){
+		node<Integer> head;
+		node<Integer> current;
+		node<Integer> prev = null;
+		if(a.data < b.data){
+			head = a;
+		}else{
+			head = b;
+		}
+		current = head;
+		a = a.next;
+		b = b.next;
+		while(a.next != null && b.next != null){
+			a = a.next;
+			b = b.next;
+			if(a.data < b.data){
+				current = a;
+			}else{
+				current = b;
+			}
+			if(prev == null){
+				head.next = current;
+				prev = head;
+			}
+			prev.next = current;			
+		}
+		if(a.next == null){
+			current.next = b;
+		}
+		if(b.next == null){
+			current.next = a;
+		}
+		
+		return head;
+	}
+
+	public static void main(String[] args) {
+		node<Integer> head = takeinput();
+		node<Integer> a = takeinput();
+
+		//		printLL(head);
+		//		System.out.println(lengthLL(head));
+		//		printElement(head, 2);
+//		head = delRec(head, 2);
+//		printLL(head);
+		//		System.out.println(lenLLRec(head));
+//		System.out.println(findElement(head, 3));
+		
+		printLL(mergeLL(head, a));
+		
+	}
+}

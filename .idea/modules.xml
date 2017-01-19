@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/APACQuestions.iml" filepath="$PROJECT_DIR$/APACQuestions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgoProblems.iml" filepath="$PROJECT_DIR$/AlgoProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays &amp; Strings.iml" filepath="$PROJECT_DIR$/Arrays &amp; Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Code Recommenders Snippets.iml" filepath="$PROJECT_DIR$/Code Recommenders Snippets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicProgramming.iml" filepath="$PROJECT_DIR$/DynamicProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Game.iml" filepath="$PROJECT_DIR$/Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA.iml" filepath="$PROJECT_DIR$/JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewProj.iml" filepath="$PROJECT_DIR$/NewProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ques.iml" filepath="$PROJECT_DIR$/Ques.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion-Assingnment.iml" filepath="$PROJECT_DIR$/Recursion-Assingnment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextProcessing.iml" filepath="$PROJECT_DIR$/TextProcessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/class2.iml" filepath="$PROJECT_DIR$/class2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/class6&amp;7.iml" filepath="$PROJECT_DIR$/class6&amp;7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crux.iml" filepath="$PROJECT_DIR$/crux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crux.dec.iml" filepath="$PROJECT_DIR$/crux.dec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data_structures.iml" filepath="$PROJECT_DIR$/data_structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oops.iml" filepath="$PROJECT_DIR$/oops.iml" />
+    </modules>
+  </component>
+</project>
